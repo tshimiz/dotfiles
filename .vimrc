@@ -24,6 +24,7 @@ Plug 'Lokaltog/vim-easymotion'
 " markdown
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'mattn/vim-maketable'
 
 " vimspector
 Plug 'puremourning/vimspector'
