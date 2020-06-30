@@ -205,7 +205,7 @@ let g:lsp_diagnostics_enabled = 1
 " ##### vimspector
 let g:vimspector_enable_mappings = 'HUMAN'
 
-" ##### open-browser
+" ##### open-browser #####
 nmap <Leader>o <Plug>(openbrowser-smart-search)
 let g:openbrowser_default_search = 'duckduckgo'
 let g:previm_plantuml_imageprefix = 'http://localhost:9999/plantuml/img'
