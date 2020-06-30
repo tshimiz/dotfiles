@@ -101,6 +101,9 @@ call plug#end()
 
 syntax enable
 
+" .un~を作らない
+set noundofile
+
 " vi互換をオフ
 set nocompatible
 
