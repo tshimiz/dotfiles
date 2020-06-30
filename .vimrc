@@ -131,6 +131,8 @@ let mapleader = ";"
 " jjでESC
 inoremap <silent> jj <ESC>
 
+" bbye
+nnoremap <Leader>q :Bdelete<CR>
 " カーソル行をハイライト
 set cursorline
 
