@@ -26,6 +26,9 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'mattn/vim-maketable'
 
+" asciidoctor
+Plug 'habamax/vim-asciidoctor'
+
 " vimspector
 Plug 'puremourning/vimspector'
 
@@ -133,6 +136,7 @@ inoremap <silent> jj <ESC>
 
 " bbye
 nnoremap <Leader>q :Bdelete<CR>
+
 " カーソル行をハイライト
 set cursorline
 
@@ -205,6 +209,18 @@ let g:previm_plantuml_imageprefix = 'http://localhost:9999/plantuml/img'
 
 " ##### plasticboy/vim-markdown #####
 let g:vim_markdown_folding_disabled = 1
+
+" ##### asciidoctor #####
+let g:asciidoctor_extensions = ['asciidoctor-diagram']
+let g:asciidoctor_pdf_extensions = ['asciidoctor-diagram', 'asciidoctor-pdf-cjk']
+let g:asciidoctor_pdf_themes_path = '~/asciidoctor/resources/themes'
+let g:asciidoctor_pdf_fonts_path = '~/asciidoctor/resources/fonts'
+let g:asciidoctor_fenced_languages = ['python', 'c', 'javascript']
+
+" generate an HTML file upon saving
+augroup ON_ASCIIDOCTOR_SAVE | au!
+    au BufWritePost *.adoc :Asciidoctor2HTML
+augroup end
 
 " ##### EasyMotion #####
 let mapleader = ";"
