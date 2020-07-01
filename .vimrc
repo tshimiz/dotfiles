@@ -1,4 +1,9 @@
-call plug#begin(stdpath('data') . '/plugged')
+if has('nvim')
+  let plugpath = (stdpath('data') . '/plugged')
+else 
+  let plugpath = '~/.vim/plugged'
+endif 
+call plug#begin(plugpath)
 
 " colorscheme
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
