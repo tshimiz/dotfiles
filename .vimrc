@@ -29,6 +29,10 @@ Plug 'mattn/vim-maketable'
 " asciidoctor
 Plug 'habamax/vim-asciidoctor'
 
+" fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 " vimspector
 Plug 'puremourning/vimspector'
 
@@ -295,4 +299,10 @@ let g:mix_format_options = '--check-equivalent'
 
 " ##### Clang #####
 let g:clang_cpp_options = '-std=c++14 -Wall -I/usr/local/include/c++/9.1.0/ -I/usr/local/include/c++/9.1.0/x86_64-apple-darwin18/'
+
+" ##### fzf #####
+nnoremap <silent> <space>f :<C-u>Files<cr>
+nnoremap <silent> <space>g :<C-u>GFiles<cr>
+nnoremap <silent> <space>G :<C-u>GFiles?<cr>
+nnoremap <silent> <space>r :<C-u>Rg<cr>
 
