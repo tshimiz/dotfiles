@@ -307,6 +307,7 @@ nnoremap <silent> <space>e :<C-u>Explore<cr>
 
 " ##### fzf #####
 nnoremap <silent> <space>f :<C-u>Files<cr>
+nnoremap <silent> <space>m :<C-u>History<cr>
 nnoremap <silent> <space>g :<C-u>GFiles<cr>
 nnoremap <silent> <space>G :<C-u>GFiles?<cr>
 nnoremap <silent> <space>r :<C-u>Rg<cr>
