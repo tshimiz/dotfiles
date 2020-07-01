@@ -310,3 +310,8 @@ nnoremap <silent> <space>g :<C-u>GFiles<cr>
 nnoremap <silent> <space>G :<C-u>GFiles?<cr>
 nnoremap <silent> <space>r :<C-u>Rg<cr>
 
+" ##### fugitive #####
+nnoremap <silent> <leader>gs :<C-u>Gstatus<cr>
+" stageのdiff
+command Greview :Git! diff --staged
+nnoremap <silent> <leader>gr :<C-u>Greview<cr>
