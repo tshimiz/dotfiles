@@ -83,6 +83,10 @@ syntax enable
 " .un~を作らない
 set noundofile
 
+" バックアップファイルを作らない
+set nobackup
+set writebackup
+
 " vi互換をオフ
 set nocompatible
 
