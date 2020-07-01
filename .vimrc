@@ -165,12 +165,6 @@ xmap <C-k> <Plug>(neosnippet_expand_target)
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 inoremap <expr> <TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr> <S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
-if !has('nvim')
-  " allow modifying the completeopt variable, or it will
-  " be overridden all the time
-  let g:asyncomplete_auto_completeopt = 0
-  set completeopt=menuone,noinsert,noselect,popup
-end
 
 " ##### lsp ####
 " 補完表示時のEnterで改行をしない
