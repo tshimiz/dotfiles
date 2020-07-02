@@ -307,6 +307,8 @@ let g:netrw_liststyle = 3
 nnoremap <silent> <space>e :<C-u>Explore<cr>
 
 " ##### fzf #####
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+
 nnoremap <silent> <space>f :<C-u>Files<cr>
 nnoremap <silent> <space>m :<C-u>History<cr>
 nnoremap <silent> <space>g :<C-u>GFiles<cr>
