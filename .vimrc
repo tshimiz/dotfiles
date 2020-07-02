@@ -136,10 +136,6 @@ nnoremap <Leader>q :Bdelete<CR>
 " カーソル行をハイライト
 set cursorline
 
-" カーソルの形状を変える(iTerm2)
-let &t_SI = "\e]50;CursorShape=1\x7"
-let &t_EI = "\e]50;CursorShape=0\x7"
-
 " ##### Color #####
 set t_Co=256
 set background=dark
