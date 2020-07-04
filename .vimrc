@@ -149,11 +149,11 @@ hi CursorLine ctermfg=187 ctermbg=234 guifg=#d7d7af guibg=#293739
 " Diffの色
 hi DiffText ctermfg=75 guifg=#61afef guibg=#585858
 " ポップアップメニューの色
-" hi Pmenu ctermfg=75 guifg=#61afef guibg=#585858
+hi Pmenu ctermfg=75 guifg=#61afef guibg=#585858
   " hi Pmenu ctermfg=75 ctermbg=238 guifg=#5fafff guibg=#444444
   " hi PmenuSel ctermfg=178 ctermbg=238 guifg=#d7af00 guibg=#444444
 " LSPのHintTextの色
- hi LspHintText ctermfg=15 ctermbg=114 guifg=#5f5f00 guibg=#98c379
+hi LspHintText ctermfg=15 ctermbg=114 guifg=#5f5f00 guibg=#98c379
 
 if has('nvim')
   set termguicolors
