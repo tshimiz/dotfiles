@@ -287,14 +287,6 @@ if os == 'Darwin' || os == 'Mac'
   let g:ale_cpp_clang_options = '-std=c++14 -Wall -I/usr/local/include/c++/9.3.0/ -I/usr/local/include/c++/9.3.0/x86_64-apple-darwin18/'
 endif
 
-" Ale for Elixir
-let s:user_dir = expand('~/.vim')
-let g:ale_elixir_elixir_ls_release = s:user_dir . '/plugged/vim-elixirls/elixir-ls/release'
-" https://github.com/JakeBecker/elixir-ls/issues/54
-let g:ale_elixir_elixir_ls_config = { 'elixirLS': { 'dialyzerEnabled': v:false } }
-autocmd FileType elixir,eelixir nnoremap <C-]> :ALEGoToDefinition<CR>
-autocmd FileType elixir,eelixir nnoremap <C-\> :ALEFindReferences<CR>
-
 " ##### Elixir #####
 let g:mix_format_on_save = 1
 let g:mix_format_options = '--check-equivalent'
