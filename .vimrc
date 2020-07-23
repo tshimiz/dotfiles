@@ -114,6 +114,8 @@ set number
 " カーソル行をハイライト
 set cursorline
 
+set updatetime=500
+
 set encoding=UTF-8
 set path+=lib/**5
 set diffopt=filler,vertical
