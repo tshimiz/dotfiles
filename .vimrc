@@ -266,7 +266,7 @@ let g:ale_fixers = {
   \ 'javascript': ['prettier', 'eslint'],
   \ 'json': ['prettier'],
   \ 'markdown': ['prettier'],
-  \ 'python': ['autopep8', 'isort', 'trim_whitespace'],
+  \ 'python': ['isort', 'black'],
   \ 'typescript': ['prettier', 'eslint'],
   \}
 let g:ale_fix_on_save = 1
@@ -284,6 +284,7 @@ let g:ale_linters = {
       \ 'cpp': ['gcc'],
       \ 'elixir':  [ 'credo', 'elixir-ls' ],
       \ 'jsx': ['stylelint', 'eslint'],
+      \ 'python': ['flake8'],
       \ 'typescript': ['eslint'],
       \}
 
