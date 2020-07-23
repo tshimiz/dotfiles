@@ -3,6 +3,7 @@ if has('nvim')
 else 
   let plugpath = '~/.vim/plugged'
 endif 
+
 call plug#begin(plugpath)
 
 " colorscheme
@@ -51,6 +52,7 @@ Plug 'mattn/vim-lsp-settings'
 " neosnippet
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
+Plug 'prabirshrestha/asyncomplete-neosnippet.vim'
 
 " vim-vinegar
 Plug 'tpope/vim-vinegar'
