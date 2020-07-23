@@ -146,10 +146,6 @@ set background=dark
 "  colorscheme solarized
 colorscheme onehalfdark
 " colorscheme hybrid
-" ヴィジュアルモードでの選択範囲の色
-hi Visual ctermbg=66 guibg=#5F8787
-" カーソル行の色
-hi CursorLine ctermfg=187 ctermbg=234 guifg=#d7d7af guibg=#293739
 " Diffの色
 hi DiffText ctermfg=75 guifg=#61afef guibg=#585858
 " ポップアップメニューの色
