@@ -190,6 +190,7 @@ nmap <silent> K <plug>(lsp-hover)
 nmap <Leader>rn <Plug>(lsp-rename)
 
 let g:lsp_diagnostics_enabled = 1
+let g:lsp_diagnostics_echo_delay = 1000
 
 " ##### vimspector
 let g:vimspector_enable_mappings = 'HUMAN'
