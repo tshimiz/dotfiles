@@ -80,7 +80,6 @@ Plug 'peitalin/vim-jsx-typescript'
 
 " elixir
 Plug 'elixir-editors/vim-elixir'
-Plug 'mhinz/vim-mix-format'
 
 " Phoenix
 Plug 'avdgaag/vim-phoenix'
@@ -262,6 +261,7 @@ let g:ale_fixers = {
   \   '*': ['remove_trailing_lines'],
   \ 'cpp': ['gcc'],
   \ 'css': ['prettier'],
+  \ 'elixir':  ['mix_format'],
   \ 'javascript': ['prettier', 'eslint'],
   \ 'json': ['prettier'],
   \ 'markdown': ['prettier'],
@@ -293,10 +293,6 @@ if os == 'Darwin' || os == 'Mac'
   let g:ale_cpp_gcc_options = '-std=c++14 -Wall -I/usr/local/include/c++/9.3.0/ -I/usr/local/include/c++/9.3.0/x86_64-apple-darwin18/'
   let g:ale_cpp_clang_options = '-std=c++14 -Wall -I/usr/local/include/c++/9.3.0/ -I/usr/local/include/c++/9.3.0/x86_64-apple-darwin18/'
 endif
-
-" ##### Elixir #####
-let g:mix_format_on_save = 1
-let g:mix_format_options = '--check-equivalent'
 
 " ##### Clang #####
 let g:clang_cpp_options = '-std=c++14 -Wall -I/usr/local/include/c++/9.1.0/ -I/usr/local/include/c++/9.1.0/x86_64-apple-darwin18/'
