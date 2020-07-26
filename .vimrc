@@ -179,7 +179,6 @@ inoremap <expr> <TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr> <S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
 
 " ##### lsp ####
-" 補完表示時のEnterで改行をしない
 nmap <silent> gd <Plug>(lsp-definition)
 nmap <silent> gy <Plug>(lsp-type-definition)
 nmap <silent> gi <Plug>(lsp-implementation)
