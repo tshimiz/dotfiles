@@ -196,7 +196,7 @@ let g:vimspector_enable_mappings = 'HUMAN'
 " ##### open-browser #####
 nmap <Leader>o <Plug>(openbrowser-smart-search)
 let g:openbrowser_default_search = 'duckduckgo'
-let g:previm_plantuml_imageprefix = 'http://localhost:9999/plantuml/img'
+let g:previm_plantuml_imageprefix = 'http://localhost:9999/img/'
 
 " ##### plasticboy/vim-markdown #####
 let g:vim_markdown_folding_disabled = 1
