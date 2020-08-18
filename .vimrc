@@ -160,13 +160,13 @@ if has('nvim')
   " set pumblend=10
 endif
 
-" ##### neosnippet ######
-call asyncomplete#register_source(asyncomplete#sources#neosnippet#get_source_options({
-    \ 'name': 'neosnippet',
-    \ 'whitelist': ['*'],
-    \ 'completor': function('asyncomplete#sources#neosnippet#completor'),
-    \ }))
+" 挿入モードでのカーソル移動
+inoremap <silent> <C-f> <Right>
+inoremap <silent> <C-b> <Left>
+inoremap <silent> <C-e> <Esc>A
+inoremap <silent> <C-a> <Esc>I
 
+" ##### neosnippet ######
 imap <C-k> <Plug>(neosnippet_expand_or_jump)
 smap <C-k> <Plug>(neosnippet_expand_or_jump)
 xmap <C-k> <Plug>(neosnippet_expand_target)
